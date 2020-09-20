@@ -1,0 +1,97 @@
+.body{
+  display: flex;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: rgb(201, 223, 217);
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  background-color: rgb(50, 107, 86);
+}
+.logo{
+  margin: 10px;
+}
+.headerText{
+  color: white;
+  font-size: 24px;
+}
+.mainBody{
+  flex: 1;
+  min-height: 80vh;
+  background-color: rgb(201, 223, 217);;
+}
+.mainBody_select{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+}
+.select{
+  height: 20px;
+  margin: 20px;
+}
+.mainBody_input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+}
+.input{
+  height: 20px;
+  margin: 20px;
+}
+.button{
+  margin: 10px;
+}
+.button:hover{
+cursor: pointer;
+}
+.footer{
+  width: 100%;
+  background-color: rgb(50, 107, 86);
+  display: flex;
+  align-items: flex-end;
+  max-height: 30px;
+  justify-content: center;
+  color: white;
+  flex:2;
+}
+@media only screen and (max-width: 850px) {
+  .mainBody{
+    display:flex;
+    flex-direction: column;
+  }
+  .mainBody_select{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .select{
+    margin: 0;
+  }
+  .mainBody_input{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .input{
+    margin: 0;
+  }
+  .logo{
+    margin: 10px;
+    height: auto;
+    width: auto;
+  }
+  .headerText{
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
